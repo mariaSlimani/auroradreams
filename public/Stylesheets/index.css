@@ -1,5 +1,5 @@
-@font-face { font-family: QuiteMagicalRegular; src: url('./Fonts/QuiteMagicalRegular-8VA2.ttf'); }
-@font-face { font-family: PeachesForBreakfastRegular; src: url('./Fonts/PeachesForBreakfastRegular-5dZz.ttf'); }
+@font-face { font-family: QuiteMagicalRegular; src: url('Fonts/QuiteMagicalRegular-8VA2.ttf'); }
+@font-face { font-family: PeachesForBreakfastRegular; src: url('Fonts/PeachesForBreakfastRegular-5dZz.ttf'); }
 @charset "UTF-8";
 
 /***********************************
@@ -18,7 +18,7 @@ overflow: hidden;
 }
 
 body {
-background-image: url(./Images/comingSoonImage.jpg);
+background-image: url(Images/comingSoonImage.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 font-family: "QuiteMagicalRegular" , sans-serif;
