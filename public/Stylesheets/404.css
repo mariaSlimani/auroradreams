@@ -22,16 +22,9 @@ margin: 0;
 background: #0F2D30;
 font-size: 14px;
 line-height: 1;
+width: 100%;
 }
 
-label {
-cursor: pointer;
-}
-
-input, select, button, textarea {
-margin: 0;
-font-size: 100%;
-}
 
 html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -114,36 +107,6 @@ animation: animStar 70s linear infinite;
 }
 }
 
-
-
-button {
-border: none;
-padding: 0;
-font-size: 0;
-line-height: 0;
-background: none;
-cursor: pointer;
-}
-
-:focus {
-outline: 0;
-}
-
-.clearfix:before, .clearfix:after {
-content: "\0020";
-display: block;
-height: 0;
-visibility: hidden;
-}
-
-.clearfix:after {
-clear: both;
-}
-
-.clearfix {
-zoom: 1;
-}
-
     /* 1. END BODY */
 /***********************************/
 
@@ -168,11 +131,11 @@ vertical-align: baseline;
 background: transparent;
 text-decoration:none;
 color: inherit;
-font-size: 40px;
+font-size: 2.3rem;
 }
 a:hover
 {
-  font-size : 48px;
+  font-size : 3rem;
   color: #CE525F;
 }
 .error__overlay {
@@ -225,96 +188,12 @@ margin: 0 auto;
 .message__text {
 font-family: 'QuiteMagicalRegular', sans-serif;
 line-height: 42px;
-font-size: 36px;
+font-size: 2rem;
 padding: 0 60px;
 max-width: 680px;
 margin: auto;
 }
 
-.error__nav {
-max-width: 600px;
-margin: 40px auto 0;
-text-align: center;
-}
-
-.e-nav__form {
-position: relative;
-height: 45px;
-overflow: hidden;
-width: 170px;
-display: inline-block;
-vertical-align: top;
-border: 1px solid #0F2D30;
-padding-left: 10px;
-padding-right: 46px;
-}
-
-.e-nav__icon {
-position: absolute;
-right: 15px;
-top: 50%;
--webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-color: #0F2D30;
--webkit-transition: color .25s ease;
-transition: color .25s ease;
-}
-
-.e-nav__link {
-height: 45px;
-line-height: 45px;
-width: 170px;
-display: inline-block;
-vertical-align: top;
-margin: 0 15px;
-border: 1px solid #0F2D30;
-color: #0F2D30;
-text-decoration: none;
-font-family: 'QuiteMagicalRegular', sans-serif;
-text-transform: uppercase;
-font-size: 11px;
-letter-spacing: .1rem;
-position: relative;
-overflow: hidden;
-}
-
-.e-nav__link:before {
-content: '';
-height: 200px;
-background: #300F0F;
-position: absolute;
-top: 70px;
-right: 70px;
-width: 260px;
--webkit-transition: all .3s;
-transition: all .3s;
--webkit-transform: rotate(50deg);
-        transform: rotate(50deg);
-}
-
-.e-nav__link:after {
--webkit-transition: all .3s;
-transition: all .3s;
-z-index: 999;
-position: relative;
-}
-
-.e-nav__link:after {
-content: "Home Page";
-}
-
-.e-nav__link:hover:before {
-top: -60px;
-right: -50px;
-}
-
-.e-nav__link:hover {
-color: #fff;
-}
-
-.e-nav__link:nth-child(2):hover:after {
-color: #fff;
-}
 /* 2.1. END Section Error */
 
 /* 2.2. Social style */
@@ -426,7 +305,7 @@ z-index: 100;
 
 
 .light {
-  width: 192px;
+  width: 12rem;
   height: 0px;
   border-bottom: 1900px solid rgb(251 226 236 / 24%);
   border-left: 50px solid transparent;
@@ -545,5 +424,16 @@ body, html, {
 }
 .error__nav {
   margin-top: 20px;
+}
+
+}
+@media (max-width: 900px) {
+a
+{
+  font-size: 1.5rem;
+}
+a:hover
+{
+  font-size: 2rem;
 }
 }

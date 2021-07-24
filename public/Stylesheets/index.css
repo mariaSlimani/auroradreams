@@ -16,7 +16,6 @@ html, body {
 height: 100%;
 overflow: hidden;
 }
-
 body {
 background-image: url(Images/comingSoonImage.jpg);
 background-repeat: no-repeat;
@@ -31,7 +30,7 @@ justify-items: center;
 .container
 {
   grid-column: 1/-1;
-  padding: 0;
+  padding: 1px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -39,19 +38,21 @@ justify-items: center;
   text-align: center;
   justify-content: center;
   line-height: 1;
+  width: 100%;
 }
 a
 {
-  font-size: 280%;
+  font-size: 6vw;
   color: #FBE2EC;
   text-decoration: none;
 }
 h2
 {
-  font-size: 260%;
+  font-size: 3vw;
   font-family: "PeachesForBreakfastRegular" , sans-serif;
 
 }
+
 .shine
 {
   font-weight: bold;
@@ -98,4 +99,24 @@ img:hover
 .box
 {
   text-align: center;
+}
+@media screen and (max-width : 900px) {
+  a
+  {
+    font-size: 7vw;
+  }
+  h2
+  {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width : 500px) {
+  a
+  {
+    font-size: 9vw;
+  }
+  h2
+  {
+    font-size: 6vw;
+  }
 }
