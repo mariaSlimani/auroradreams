@@ -1,0 +1,100 @@
+@font-face { font-family: QuiteMagicalRegular; src: url('../Fonts/QuiteMagicalRegular-8VA2.ttf'); }
+@font-face { font-family: PeachesForBreakfastRegular; src: url('../Fonts/PeachesForBreakfastRegular-5dZz.ttf'); }
+@charset "UTF-8";
+
+/***********************************
+    /* 1. BODY */
+/***********************************/
+
+* {
+margin: 0;
+padding: 0;
+-webkit-text-size-adjust: none;
+}
+
+html, body {
+height: 100%;
+overflow: hidden;
+}
+
+body {
+background-image: url(../Images/comingSoonImage.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+font-family: "QuiteMagicalRegular" , sans-serif;
+color: white;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 6fr 1fr;
+justify-items: center;
+}
+.container
+{
+  grid-column: 1/-1;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  line-height: 1;
+}
+h1
+{
+  font-size: 560%;
+  color: #FBE2EC;
+}
+h2
+{
+  font-size: 260%;
+  font-family: "PeachesForBreakfastRegular" , sans-serif;
+
+}
+.shine
+{
+  font-weight: bold;
+  animation: shimmer 10s infinite;
+}
+@-webkit-keyframes shimmer {
+    0% {
+        color: white;
+      }
+    25%
+    {
+      color: #FBE2EC;
+    }
+    75%
+    {
+      color: #7FC7B3;
+    }
+    100%
+    {
+      color : white;
+    }
+}
+img
+{
+  width: 70%;
+  height: auto;
+}
+img:hover
+{
+  width: 80%;
+}
+.contact
+{
+  border-top: 3px solid #FBE2EC;
+  padding-top: 6px;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  width: 30%;
+  justify-items : center;
+  align-items: center;
+  align-self: center;
+}
+.box
+{
+  text-align: center;
+}
