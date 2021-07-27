@@ -196,7 +196,7 @@ margin-bottom: 5vh;
   border: 1px solid #E86C8D;
 }
 .modal {
-  display : none;/* Hidden by default */
+  display : flex;/* Hidden by default */
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -237,12 +237,24 @@ margin-bottom: 5vh;
   text-decoration: none;
   cursor: pointer;
 }
+#thanks
+{
+  font-size : 4vw;
+}
+#th-txt
+{
+  font-size : 2.3vw;
+}
 @media screen and (max-width : 900px) {
   h1,a
   {
     font-size: 7vw;
   }
-  h2,label,#error-msg
+  #thanks
+  {
+    font-size: 6vw;
+  }
+  h2,label,#error-msg,#th-txt
   {
     font-size: 4vw;
   }
@@ -252,7 +264,11 @@ margin-bottom: 5vh;
   {
     font-size: 9vw;
   }
-  h2,label,#error-msg
+  #thanks
+  {
+    font-size: 8vw;
+  }
+  h2,label,#error-msg,#th-txt
   {
     font-size: 6vw;
   }
