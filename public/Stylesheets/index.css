@@ -196,7 +196,7 @@ margin-bottom: 5vh;
   border: 1px solid #E86C8D;
 }
 .modal {
-  display : flex;/* Hidden by default */
+  display : none;/* Hidden by default */
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
