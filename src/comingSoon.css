@@ -12,11 +12,7 @@ padding: 0;
 -webkit-text-size-adjust: none;
 }
 
-html, body {
-height: 100%;
-overflow: hidden;
-}
-body {
+.body {
 background-image: url(Images/comingSoonImage.jpg);
 background-repeat: no-repeat;
 background-size: cover;
@@ -28,7 +24,7 @@ grid-template-rows: 6fr 3fr 1fr;
 justify-items: center;
 align-items: center;
 width : 100%;
-height: 100%;
+height: 100vh;
 }
 .container
 {
@@ -43,13 +39,17 @@ height: 100%;
   line-height: 1;
   width: 100%;
 }
-h1,a
+a,.title1
 {
   font-size: 6vw;
   color: #FBE2EC;
   text-decoration: none;
 }
-h2,label,#error-msg
+.title1:hover, a:hover
+{
+  font-size: 6.1vw;
+}
+.title2,.label,#error-msg
 {
   font-size: 3vw;
   font-family: "PeachesForBreakfastRegular" , sans-serif;
@@ -80,12 +80,12 @@ h2,label,#error-msg
 }
 img
 {
-  width: 70%;
+  width: 65%;
   height: auto;
 }
 img:hover
 {
-  width: 80%;
+  width: 75%;
 }
 .contact
 {
@@ -103,6 +103,7 @@ img:hover
 .box
 {
   text-align: center;
+  font-size: .5vw;
 }
 
 
@@ -246,29 +247,37 @@ margin-bottom: 5vh;
   font-size : 2.3vw;
 }
 @media screen and (max-width : 900px) {
-  h1,a
+  .title1,a
   {
     font-size: 7vw;
+  }
+  .title1:hover,a:hover
+  {
+    font-size: 7.1vw;
   }
   #thanks
   {
     font-size: 6vw;
   }
-  h2,label,#error-msg,#th-txt
+  .title2,.label,#error-msg,#th-txt
   {
     font-size: 4vw;
   }
 }
 @media screen and (max-width : 500px) {
-  h1,a
+  .title1,a
   {
     font-size: 9vw;
+  }
+  .title1:hover,a:hover
+  {
+    font-size: 9.1vw;
   }
   #thanks
   {
     font-size: 8vw;
   }
-  h2,label,#error-msg,#th-txt
+  .title2,.label,#error-msg,#th-txt
   {
     font-size: 6vw;
   }

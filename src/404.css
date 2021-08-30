@@ -124,7 +124,8 @@ height: 100%;
 text-align: center;
 margin-top: 70px;
 }
-a {
+
+a,.toHome {
 margin: 0;
 padding: 0;
 vertical-align: baseline;
@@ -133,7 +134,7 @@ text-decoration:none;
 color: inherit;
 font-size: 2.3rem;
 }
-a:hover
+a:hover,.toHome:hover
 {
   font-size : 3rem;
   color: #CE525F;
@@ -428,11 +429,11 @@ body, html, {
 
 }
 @media (max-width: 900px) {
-a
+.toHome
 {
   font-size: 1.5rem;
 }
-a:hover
+.toHome:hover
 {
   font-size: 2rem;
 }
