@@ -1,6 +1,6 @@
 import React from 'react';
 import './404.css';
-
+import {Link} from 'react-router-dom';
 function Lost() {
   return (
     <div>
@@ -33,7 +33,7 @@ function Lost() {
       <div class="error__content">
         <div class="error__message message">
           <h1 class="message__title">404 <br /> Page Not Found!<br /> </h1>
-          <p class="message__text">Dreamers have insight beyond what everyone else can see, but we'd rather guide you back to <a className="toHome" href="index.html">our homepage</a><br />  sweetest dreams !</p>
+          <p class="message__text">Dreamers have insight beyond what everyone else can see, but we'd rather guide you back to <Link className="toHome" to="/ComingSoon">our homepage</Link><br />  sweetest dreams !</p>
           {/* Oh... it seems that you have woken up... it's okey just keep on dreaming, everything is fine :D*/}
         </div>
       </div>

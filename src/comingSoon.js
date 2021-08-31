@@ -4,6 +4,7 @@ import gitPic from "./Images/github.png";
 import liPic from "./Images/linkedin.png";
 import fbPic from "./Images/fb.png";
 import SheetDB from 'sheetdb-js';
+import {Link} from 'react-router-dom';
 function ComingSoon() {
   let email;
   function err()
@@ -90,7 +91,7 @@ function ComingSoon() {
     <div className="body">
     <main className="container">
   <h1 className="title1">
-    <a href="#">Seems like you've stumbled upon this page !</a>
+    <Link to="/404">Seems like you've stumbled upon this page !</Link>
   </h1>
   <h2 className="title2">
     <br /> Unfortunately we're still not ready yet . . . Weaving beautiful dreams takes some time !
