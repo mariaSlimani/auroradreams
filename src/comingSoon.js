@@ -3,7 +3,9 @@ import './comingSoon.css';
 import gitPic from "./Images/github.png";
 import liPic from "./Images/linkedin.png";
 import fbPic from "./Images/fb.png";
+import SheetDB from 'sheetdb-js';
 function ComingSoon() {
+  let email;
   function err()
   {
     document.getElementById("error-msg").style.display = "none";
@@ -38,23 +40,25 @@ function ComingSoon() {
     return re.test(email);
   }
   function submit() {
+    email= document.getElementById('mce-EMAIL').value;
     var form = document.getElementById('mc-embedded-subscribe-form');
     form.action = "https://sheetdb.io/api/v1/1ny19tpk7n040";
     form.onSubmit= ()=> {return false};
     form.addEventListener("submit", e => {
     e.preventDefault();
-    console.log('form.action: '+form.action);
-    fetch(form.action, {
+    /*fetch(form.action, {
         method : "POST",
-        body: new FormData(document.getElementById("mc-embedded-subscribe-form")),
-    }).then(
-      response =>{
-        if (!response.ok)
-        {
-          throw Error(response.statusText);
-        }
-        response.json();
-      }).then((html) => {
+        body: JSON.stringify(email),
+        //new FormData(document.getElementById("mc-embedded-subscribe-form")),
+    })*/
+    SheetDB.write(form.action, { sheet: 'f1', data: {EMAIL: email} })
+    /*.then(function(result){
+  console.log(result);
+}, function(error){
+  console.log(error);
+})*/
+  /*  .then(
+      result =>result.json())*/.then((html) => {
       // Get the modal
     var modal = document.getElementById("myModal");
     // Get the <span> element that closes the modal
@@ -67,6 +71,7 @@ function ComingSoon() {
       modal.style.display = "none";
       window.location.reload();
 
+      // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
         if (event.target !== modal) {
           modal.style.display = "none";
@@ -76,12 +81,7 @@ function ComingSoon() {
     }
 
 
-    // When the user clicks anywhere outside of the modal, close it
-
-    }).catch(function(error) {
-      alert("Looks like there has been a problem and we couldn't save your email address :( \nPlease try again later!");
-      window.location.reload();
-});
+    });
   });
     form.reset();
   }
@@ -90,7 +90,7 @@ function ComingSoon() {
     <div className="body">
     <main className="container">
   <h1 className="title1">
-    <a href="404.html">Seems like you've stumbled upon this page !</a>
+    <a href="#">Seems like you've stumbled upon this page !</a>
   </h1>
   <h2 className="title2">
     <br /> Unfortunately we're still not ready yet . . . Weaving beautiful dreams takes some time !
